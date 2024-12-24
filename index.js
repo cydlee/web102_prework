@@ -29,26 +29,29 @@ const gamesContainer = document.getElementById("games-container");
 function addGamesToPage(games) {
 
     // loop over each item in the data
-
-
+    for (const i in games) {
         // create a new div element, which will become the game card
-
-
+        let element = document.createElement("div");
         // add the class game-card to the list
-
+        element.classList.add("game-card");
 
         // set the inner HTML using a template literal to display some info 
         // about each game
         // TIP: if your images are not displaying, make sure there is space
         // between the end of the src attribute and the end of the tag ("/>")
-
+        element.innerHTML = `<h3>${games[i].name}</h3>
+                             <img src=${games[i].img} class="game-img"></img>
+                             <p>${games[i].description}</p>
+                             <p>\$${games[i].pledged} pledged</p>`;
 
         // append the game to the games-container
-
+        gamesContainer.appendChild(element);
+    }
 }
 
 // call the function we just defined using the correct variable
 // later, we'll call this function using a different list of games
+addGamesToPage(GAMES_JSON);
 
 
 /*************************************************************************************
