@@ -24,12 +24,10 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<video controls width=100% title='Video Walkthrough' alt='Video Walkthrough'>
-    <source src='video-walkthrough.mp4' type=video/mp4 />
-</video>
+<img src='video-walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-Video created with OBS Studio.
+GIF created with OBS Studio and ffmpeg.
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -41,7 +39,8 @@ Describe any challenges encountered while building the app.
 
 No significant challenges encountered while building the app, I just had to refresh
 my JavaScript/HTML/CSS knowledge since I haven't used these tools in a while.
-I encountered an issue with peek so instead I used OBS to record the video walkthrough.
+I encountered an issue with peek so instead I used OBS to record the video walkthrough,
+and then I made a GIF out of it using ffmpeg.
 
 ## License
 
